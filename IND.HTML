@@ -1,0 +1,33 @@
+<table border =2>
+    <thead>
+        <tr id="head">
+        </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+</table>
+<script>
+    const head = document.getElementById("head");
+    const heading = ["S.NO" , "Mobile","Price"];
+    let th ="";
+    for(let i=0 ; i < heading.length ; i++){
+        th += `<td> ${heading[i]} </td>`;
+    }
+    head.innerHTML =th;
+
+    const tbody =document.getElementById("tbody");
+    let tr ="";
+    const products= [
+        ["1","iphone","Rs : 2000"],
+        ["2","infinix","Rs : 2100"],
+        ["3","huwaii","Rs : 1100"],
+        ["4","samsung","Rs : 4000"],
+    ];
+    for(let i=0; i < s.length ; i++){
+        tr += `<tr>`;
+        for(let j =0; j <products[i].length; j++){
+            tr +=`<td>${products[i][j]}</td>`;
+        }
+    }
+</script>
